@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functies</title>
+
+    <script>
+        function add(getalA, getalB) {
+            let getalC = getalA + getalB;
+            console.log(getalC);
+        }
+
+        console.log("Test add; should see 13");
+        add(3, 10);
+
+        function multiply(getalA, getalB) {
+            let getalC = getalA * getalB;
+            console.log(getalC);
+        }
+
+        console.log("Test multiply; should see 60");
+        multiply(10, 6);
+
+        function rolldice() {
+            let getal = Math.ceil(Math.random() * 10);
+            return getal;
+        }
+
+        console.log("Test rolldice; should see a number between 1 and 10");
+        let myNumber = rolldice();
+        console.log(myNumber);
+
+        function largerNum(getalA, getalB) {
+            if (getalA > getalB) {
+                return getalA;
+            } else if (getalB > getalA) {
+                return getalB;
+            } else if (getalA = getalB) {
+                return 0;
+            }
+        }
+
+        console.log("Test largerNum; shoudl see 21");
+        let bigNum = largerNum(21, 20);
+        console.log(bigNum);
+    </script>
+</head>
+
+<body>
+    <h1 id="myDice">Placeholder</h1>
+    <script>
+        document.getElementById("myDice").innerHTML = myNumber;
+    </script>
+    </h1>
+</body>
+
+</html>
