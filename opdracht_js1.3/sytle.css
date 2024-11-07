@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    padding: 20px;
+  }
+  .main{
+    background-color: #eee;
+    width: 700px;
+    padding: 20px;
+  }
+  .article{
+    border: 4px inset rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background: #eee;
+    padding: 20px;
+  }
+  ul{
+    padding: 10px;
+    list-style: disc;
+  }
+  .articleImg{
+    padding: 10px;
+    width: 95%;
+  }
+  .dark{
+    background-color: #111;
+    color: #eee;
+  }
+
+  body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
